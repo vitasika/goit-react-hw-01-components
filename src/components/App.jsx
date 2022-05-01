@@ -1,20 +1,21 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import friends from './FriendList/friends.json';
 import transactions from './TransactionHistory/transactions.json';
 
-
 export const App = () => {
   return (
-    <div class="profile" style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 20,
-        color: '#010101'
-      }}>
+    <div class="profile">
+      {/* <Profile
+        key={user.key}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      /> */}
+
       <div class="description">
         <img
           src={user.avatar}
@@ -42,6 +43,7 @@ export const App = () => {
         </li>
       </ul>
     </div>
+
     // <div
     //   style={{
     //     height: '100vh',
