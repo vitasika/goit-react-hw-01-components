@@ -1,5 +1,8 @@
 import PropTypes from 'prop-types';
-import user from './Profile/user'
+import user from './Profile/user';
+import data from './Statistics/data';
+import friends from './FriendList/friends';
+import transactions from './TransactionHistory/transactions';
 
 
 export const App = () => {
