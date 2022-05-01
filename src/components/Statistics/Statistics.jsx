@@ -7,21 +7,21 @@ export default function Statistics({ id, label, percentage }) {
 
       <ul class="stat-list">
         <li class="item" key={id}>
-          <span class="label"></span>
-          <span class="percentage">%</span>
+          <span class="label">{label}</span>
+          <span class="percentage">{percentage}%</span>
         </li>
         {/* <li class="item">
-                    <span class="label">{data.label}</span>
-                    <span class="percentage">{data.percentage}%</span>
-                </li>
-                <li class="item">
-                    <span class="label">{data.label}</span>
-                    <span class="percentage">{data.percentage}%</span>
-                </li>
-                <li class="item">
-                    <span class="label">{data.label}</span>
-                    <span class="percentage">{data.percentage}%</span>
-                </li> */}
+                            <span class="label">{data.label}</span>
+                            <span class="percentage">{data.percentage}%</span>
+                        </li>
+                        <li class="item">
+                            <span class="label">{data.label}</span>
+                            <span class="percentage">{data.percentage}%</span>
+                        </li>
+                        <li class="item">
+                            <span class="label">{data.label}</span>
+                            <span class="percentage">{data.percentage}%</span>
+                        </li> */}
       </ul>
     </section>
   );
