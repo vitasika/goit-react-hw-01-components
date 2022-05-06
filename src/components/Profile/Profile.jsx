@@ -34,7 +34,10 @@ Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  stats: PropTypes.number.isRequired,
+  stats: PropTypes.array.isRequired,
+  followers: PropTypes.string.isRequired,
+  views: PropTypes.string.isRequired,
+  likes: PropTypes.number.isRequired,
 };
 
 // .shape({
