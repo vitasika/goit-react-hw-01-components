@@ -4,14 +4,14 @@ import style from '../Profile/Profile.module.css';
 export default function Profile({ avatar, username, tag, location, stats }) {
   return (
     <div className={style.profile}>
-      <div class="description">
+      <div className={style.description}>
         <img src={avatar} alt="User avatar" class="avatar" />
         <p class="name">{username}</p>
         <p class="tag">@{tag}</p>
         <p class="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className={style.stats}>
         <li>
           <span class="label">Followers</span>
           <span class="quantity">{stats.followers}</span>

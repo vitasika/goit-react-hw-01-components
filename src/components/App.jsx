@@ -10,9 +10,11 @@ import data from './Statistics/data.json';
 import friends from './FriendList/friends.json';
 import transactions from './TransactionHistory/transactions.json';
 
+import s from '../components/App.module.css';
+
 export const App = () => {
   return (
-    <div>
+    <div className={s.conteiner}>
       <Profile
         key={user.key}
         username={user.username}
