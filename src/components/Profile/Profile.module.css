@@ -1,0 +1,7 @@
+.profile {
+  max-width: 370px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 14px -6px rgba(75, 75, 78, 1);
+  overflow: hidden;
+}
