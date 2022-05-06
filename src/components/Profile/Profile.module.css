@@ -16,6 +16,7 @@
 }
 
 .avatar {
+  padding: 20px 0 20px 0;
   border-bottom: 1px solid #ccc;
   background-color: rgb(195, 225, 215);
 }
