@@ -4,7 +4,7 @@ import style from '../Statistics/Statistics.module.css';
 export default function Statistics({ title, data }) {
   return (
     <section className={style.statistics}>
-      {title && <h2 className="title">Upload stats</h2>}
+      {title && <h2 className={style.title}>Upload stats</h2>}
 
       <ul className={style.statlist}>
         {data.map(item => (
@@ -19,6 +19,7 @@ export default function Statistics({ title, data }) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
-  stste: PropTypes.object.isRequired,
+  id: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };

@@ -29,7 +29,7 @@ export default function Profile({ avatar, username, tag, location, stats }) {
   );
 }
 
-Profile.propTypes = {
+Profile.prototype = {
   imageUrl: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
@@ -39,9 +39,3 @@ Profile.propTypes = {
   views: PropTypes.string.isRequired,
   likes: PropTypes.number.isRequired,
 };
-
-// .shape({
-//         followers: PropTypes.number.isRequired,
-//         views: PropTypes.number.isRequired,
-//         likes: PropTypes.number.isRequired,
-//     })
