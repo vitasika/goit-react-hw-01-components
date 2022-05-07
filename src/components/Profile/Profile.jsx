@@ -29,7 +29,7 @@ export default function Profile({ avatar, username, tag, location, stats }) {
   );
 }
 
-Profile.prototype = {
+Profile.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
