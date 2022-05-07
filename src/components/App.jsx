@@ -1,9 +1,9 @@
-// import PropTypes from 'prop-types';
 // Импорт компонентов
 import Profile from '../components/Profile';
 import Statistics from '../components/Statistics';
 import FriendList from '../components/FriendList';
 import TransactionHistory from '../components/TransactionHistory';
+
 // Импорт условий в задании
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
@@ -25,9 +25,8 @@ export const App = () => {
       />
       <Statistics title="Upload stats" data={data} />;
       <Statistics data={data} />;
-      {/* <FriendList friends={friends} />,
-
-      <TransactionHistory items={transactions} />; */}
+      <FriendList friends={friends} />,
+      {/* <TransactionHistory items={transactions} />; */}
     </div>
   );
 };
