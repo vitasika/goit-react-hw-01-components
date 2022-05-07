@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import FriendListItem from '../FriendListItem/FriendListItem';
 import style from '../FriendList/FriendList.module.css';
 
-export default function Friends({ friends }) {
+export default function FriendList({ friends }) {
   return (
     <ul className={style.list}>
       {friends.map(friend => (
@@ -17,7 +17,7 @@ export default function Friends({ friends }) {
   );
 }
 
-Friends.propTypes = {
+FriendList.propTypes = {
   id: PropTypes.number.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
