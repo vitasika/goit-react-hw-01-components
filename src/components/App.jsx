@@ -2,13 +2,13 @@
 import Profile from '../components/Profile';
 import Statistics from '../components/Statistics';
 import FriendList from '../components/FriendList';
-// import TransactionHistory from '../components/TransactionHistory';
+import TransactionHistory from '../components/TransactionHistory';
 
 // Импорт условий в задании
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import friends from './FriendList/friends.json';
-// import transactions from './TransactionHistory/transactions.json';
+import transactions from './TransactionHistory/transactions.json';
 
 import s from '../components/App.module.css';
 
