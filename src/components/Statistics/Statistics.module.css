@@ -11,8 +11,8 @@
   padding: 20px 0;
   text-align: center;
   font-weight: 300;
-  /* color: rgb(88, 91, 94); */
   color: rgb(31, 32, 32);
+  border-bottom: 1px solid #ccc;
 }
 
 .statlist {
@@ -28,6 +28,10 @@
   padding-bottom: 10px;
 }
 
+.item:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
 .label {
   color: rgb(31, 32, 32);
   font-size: 12px;
@@ -36,7 +40,6 @@
 
 .percentage {
   color: rgb(31, 32, 32);
-
   font-weight: 500;
   margin-top: 5px;
 }
