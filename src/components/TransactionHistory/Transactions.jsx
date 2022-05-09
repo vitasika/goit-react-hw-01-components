@@ -17,11 +17,11 @@ export default function Transactions({ id, type, amount, currency }) {
           <td>{amount}</td>
           <td>{currency}</td>
         </tr>
-        {/* <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr> */}
+        <tr>
+          <td>Withdrawal</td>
+          <td>85</td>
+          <td>USD</td>
+        </tr>
       </tbody>
     </table>
   );
