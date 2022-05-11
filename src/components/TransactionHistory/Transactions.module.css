@@ -1,6 +1,8 @@
 .transactionHistory {
-  border-spacing: 1px;
-  width: 600px;
+  border-spacing: 2px;
+  width: 370px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
 }
 
 thead {

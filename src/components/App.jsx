@@ -5,10 +5,10 @@ import FriendList from '../components/FriendList';
 import TransactionHistory from '../components/TransactionHistory';
 
 // Импорт условий в задании
-import user from './Profile/user.json';
-import data from './Statistics/data.json';
-import friends from './FriendList/friends.json';
-import transactions from './TransactionHistory/transactions.json';
+import user from './json/user.json';
+import data from './json/data.json';
+import friends from './json/friends.json';
+import transactions from './json/transactions.json';
 
 import s from '../components/App.module.css';
 
@@ -26,7 +26,7 @@ export const App = () => {
       <Statistics title="Upload stats" data={data} />
       <Statistics data={data} />
       <FriendList friends={friends} />
-      {/* <TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
