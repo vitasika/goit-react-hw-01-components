@@ -2,8 +2,7 @@
 import Profile from '../components/Profile';
 import Statistics from '../components/Statistics';
 import FriendList from '../components/FriendList';
-import TransactionHistory from './TransactionHistory';
-// import TransactionHistory from '../components/TransactionHistory';
+import TransactionHistory from '../components/TransactionHistory';
 
 // Импорт условий в задании
 import user from './Profile/user.json';
