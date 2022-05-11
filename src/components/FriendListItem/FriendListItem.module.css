@@ -1,7 +1,7 @@
 .item {
   display: flex;
   align-items: center;
-  width: 370px;
+  flex-direction: column;
   padding: 10px;
   border-radius: 10px;
   background-color: bisque;
@@ -25,7 +25,7 @@
 }
 
 .status {
-  margin-left: auto;
+  /* margin-left: auto; */
   color: rgba(0, 0, 0, 0.261);
   font-weight: 400;
 }
