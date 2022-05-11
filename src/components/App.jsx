@@ -8,7 +8,7 @@ import TransactionHistory from '../components/TransactionHistory';
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import friends from './FriendList/friends.json';
-import transactions from './TransactionHistory/transactions';
+import transactions from './TransactionHistory/transactions.json';
 
 import s from '../components/App.module.css';
 
