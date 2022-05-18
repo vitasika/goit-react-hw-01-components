@@ -13,23 +13,16 @@ export default function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items.map(
-          ({ id, type, amount, currency }) => (
-            // index % 2 === 0 ?
+        {items.map(({ id, type, amount, currency }) => {
+          const className = index % 2 === 0 ? styles.even : styles.odd;
+          return (
             <tr key={id}>
-              <td className={styles.odd}>{type}</td>
+              <td className={className}>{type}</td>
               <td>{amount}</td>
               <td className={styles.odd}>{currency}</td>
             </tr>
-          )
-          // ) : (
-          //   <tr key={item.id}>
-          //     <td className={styles.odd}>{item.type}</td>
-          //     <td className={styles.odd}>{item.amount}</td>
-          //     <td className={styles.odd}>{item.currency}</td>
-          //   </tr>
-          // )
-        )}
+          );
+        })}
       </tbody>
     </table>
   );
@@ -45,3 +38,23 @@ TransactionHistory.propTypes = {
     })
   ),
 };
+
+/* <tbody>
+  {items.map(
+    ({ id, type, amount, currency }) => (
+      // index % 2 === 0 ?
+      <tr key={id}>
+        <td className={styles.odd}>{type}</td>
+        <td>{amount}</td>
+        <td className={styles.odd}>{currency}</td>
+      </tr>
+    )
+    ) : (
+      <tr key={item.id}>
+        <td className={styles.odd}>{item.type}</td>
+        <td className={styles.odd}>{item.amount}</td>
+        <td className={styles.odd}>{item.currency}</td>
+      </tr>
+    )
+  )}
+</tbody>; */

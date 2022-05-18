@@ -24,3 +24,7 @@ td {
 td.odd {
   background-color: rgb(236, 241, 244);
 }
+
+td.even {
+  background-color: rgb(253, 253, 253);
+}
