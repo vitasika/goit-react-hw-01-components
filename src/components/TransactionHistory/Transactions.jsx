@@ -13,13 +13,13 @@ export default function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items.map(({ id, type, amount, currency }) => {
+        {items.map(({ id, type, amount, currency }, index) => {
           const className = index % 2 === 0 ? styles.even : styles.odd;
           return (
             <tr key={id}>
               <td className={className}>{type}</td>
-              <td>{amount}</td>
-              <td className={styles.odd}>{currency}</td>
+              <td className={className}>{amount}</td>
+              <td className={className}>{currency}</td>
             </tr>
           );
         })}

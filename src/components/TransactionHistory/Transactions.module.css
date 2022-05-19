@@ -22,9 +22,9 @@ td {
 }
 
 td.odd {
-  background-color: rgb(236, 241, 244);
+  background-color: rgb(201, 230, 247);
 }
 
-td.even {
+/* td.even {
   background-color: rgb(253, 253, 253);
-}
+} */
